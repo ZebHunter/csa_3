@@ -1,0 +1,14 @@
+(
+    (defun calculate (limit)
+        (
+            (let result 0)
+            (loop (!= limit 0) (
+                (setq limit (- limit 1))
+                (setq result
+                    (+ result (if (== (mod limit 3) 0) limit 0) (if (== (mod limit 5) 0) limit 0) )
+                    )
+                )
+            )
+        )
+    )
+)
