@@ -92,7 +92,7 @@ class Operand:
 
 
 class Instruction:
-    def __init__(self, prefix: Prefix | None, opcode: Opcode, operands: list[Operand] | None) -> None:
+    def __init__(self, prefix: Prefix | None, opcode: Opcode, operands: list[str] | None | str | int) -> None:
         self.prefix = prefix
         self.opcode = opcode
         self.operands = operands
