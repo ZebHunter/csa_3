@@ -1,0 +1,2 @@
+((defvar str "")
+(print (read str)))
